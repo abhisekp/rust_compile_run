@@ -1,0 +1,14 @@
+[package]
+name = "rust_compile_run"
+version = "1.0.0"
+edition = "2021"
+authors = ["Abhisek Pattnaik <abhisekp@engineer.com>"]
+description = "A Rust CLI tool to compile, run, and optionally delete Rust executables with additional features like file watching and notifications."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+tempfile = "3.2.0"
+notify = "5.0.0"
+notify-rust = "4.0.0"
