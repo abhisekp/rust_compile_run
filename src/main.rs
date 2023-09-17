@@ -119,14 +119,6 @@ fn main() {
             let debounce_duration = Duration::from_millis(500);
 
             loop {
-                // Non-blocking read to check for 'Q' or 'q'
-                let mut input = String::new();
-                if io::stdin().read_line(&mut input).is_ok() {
-                    if input.trim().eq_ignore_ascii_case("q") {
-                        break;
-                    }
-                }
-                
                 match rx.recv() {
                     Ok(_) => {
                         if last_compile_time.elapsed() >= debounce_duration {
