@@ -8,34 +8,42 @@
 
 To install the package, run:
 
+This will add two binaries.
+- rust_compile_run
+- rustcr
+
 ```bash
 cargo install rust_compile_run
 ```
 
 ## Usage
 
-Basic usage:
+### Basic usage:
 
 ```bash
 rust_compile_run -f your_file.rs
+rustcr -nwf your_file.rs
 ```
 
-Compile and run in a temporary directory:
+### Compile and run in a temporary directory:
 
 ```bash
-rust_compile_run -f your_file.rs -t
+rust_compile_run -tf your_file.rs
+rustcr -tf your_file.rs
 ```
 
-Watch for file changes and recompile:
+### Watch for file changes and recompile:
 
 ```bash
-rust_compile_run -f your_file.rs -w
+rust_compile_run -wf your_file.rs
+rustcr -wf your_file.rs
 ```
 
-Enable notifications:
+### Enable notifications:
 
 ```bash
-rust_compile_run -f your_file.rs -n
+rust_compile_run -nf your_file.rs
+rustcr -nf your_file.rs
 ```
 
 ## Features
