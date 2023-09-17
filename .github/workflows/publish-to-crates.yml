@@ -1,0 +1,26 @@
+name: Publish to Crates.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        override: true
+
+    - name: Publish to Crates.io
+      uses: actions-rs/cargo@v1
+      with:
+        command: publish
+        args: --token ${{ secrets.CRATES_IO_TOKEN }}
