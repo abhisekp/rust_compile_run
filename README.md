@@ -1,6 +1,7 @@
 # Rust Compile and Run
 
-## Description
+[![Rust Compile Run Logo](./rust_compile_run_logo.png)](https://crates.io/crates/rust_compile_run)
+
 
 `Rust Compile and Run` is a command-line utility that simplifies the process of compiling, running, and cleaning up Rust executables. It offers various features like watching for file changes, running in a temporary directory, and optional notifications.
 
@@ -8,13 +9,13 @@
 
 To install the package, run:
 
-This will add two binaries.
-- rust_compile_run
-- rustcr
-
 ```bash
 cargo install rust_compile_run
 ```
+
+This will add two binaries.
+- rust_compile_run
+- rustcr
 
 ## Usage
 

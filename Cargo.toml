@@ -1,6 +1,6 @@
 [package]
 name = "rust_compile_run"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 authors = ["Abhisek Pattnaik <abhisekp@engineer.com>"]
 description = "A Rust CLI tool to compile, run, and optionally delete Rust executables with additional features like file watching and notifications."
